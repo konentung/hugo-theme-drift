@@ -1,0 +1,9 @@
+{{ define "main" }}
+
+<section class="error-page">
+  <div class="error-glitch" data-text="{{ T "notFoundTitle" }}">{{ T "notFoundTitle" }}</div>
+  <p class="error-msg">{{ T "notFoundText" }}</p>
+  <a href="{{ .Site.BaseURL }}" class="btn btn-glow">&larr; {{ T "backToHome" }}</a>
+</section>
+
+{{ end }}

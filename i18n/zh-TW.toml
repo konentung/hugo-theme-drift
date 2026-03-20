@@ -1,0 +1,111 @@
+# Navigation
+[home]
+other = "首頁"
+
+[posts]
+other = "文章"
+
+[projects]
+other = "專案"
+
+[notes]
+other = "筆記"
+
+[tags]
+other = "標籤"
+
+[about]
+other = "關於"
+
+[search]
+other = "搜尋"
+
+# Hero
+[explorePosts]
+other = "瀏覽文章"
+
+[viewProjects]
+other = "查看專案"
+
+# Sections
+[recentPosts]
+other = "最新文章"
+
+[featuredProjects]
+other = "專案"
+
+[recentNotes]
+other = "筆記"
+
+[viewAll]
+other = "查看全部"
+
+[latest]
+other = "最新"
+
+# Post
+[minRead]
+one = "{{ .Count }} 分鐘閱讀"
+other = "{{ .Count }} 分鐘閱讀"
+
+[previous]
+other = "上一篇"
+
+[next]
+other = "下一篇"
+
+[tableOfContents]
+other = "目錄"
+
+[sharePost]
+other = "分享文章"
+
+[comments]
+other = "留言"
+
+# Pagination
+[prevPage]
+other = "上一頁"
+
+[nextPage]
+other = "下一頁"
+
+# Search
+[searchPlaceholder]
+other = "搜尋文章、專案、筆記..."
+
+[searchTip]
+other = "輸入關鍵字搜尋所有內容"
+
+[searchShortcut]
+other = "提示：按下 / 即可隨時開啟搜尋"
+
+# 404
+[notFoundTitle]
+other = "404"
+
+[notFoundText]
+other = "糟糕！你要找的頁面似乎不存在。"
+
+[backToHome]
+other = "回到首頁"
+
+# Footer
+[allRightsReserved]
+other = "保留所有權利。"
+
+# Alerts
+[alertNote]
+other = "備註"
+
+[alertTip]
+other = "提示"
+
+[alertImportant]
+other = "重要"
+
+[alertWarning]
+other = "警告"
+
+[alertCaution]
+other = "注意"

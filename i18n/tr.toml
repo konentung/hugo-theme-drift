@@ -1,0 +1,111 @@
+# Navigation
+[home]
+other = "Ana Sayfa"
+
+[posts]
+other = "Yazılar"
+
+[projects]
+other = "Projeler"
+
+[notes]
+other = "Notlar"
+
+[tags]
+other = "Etiketler"
+
+[about]
+other = "Hakkında"
+
+[search]
+other = "Ara"
+
+# Hero
+[explorePosts]
+other = "Yazıları Keşfet"
+
+[viewProjects]
+other = "Projeleri Gör"
+
+# Sections
+[recentPosts]
+other = "Son Yazılar"
+
+[featuredProjects]
+other = "Projeler"
+
+[recentNotes]
+other = "Notlar"
+
+[viewAll]
+other = "Tümünü Gör"
+
+[latest]
+other = "Yeni"
+
+# Post
+[minRead]
+one = "{{ .Count }} dk okuma"
+other = "{{ .Count }} dk okuma"
+
+[previous]
+other = "Önceki"
+
+[next]
+other = "Sonraki"
+
+[tableOfContents]
+other = "İçindekiler"
+
+[sharePost]
+other = "Bu yazıyı paylaş"
+
+[comments]
+other = "Yorumlar"
+
+# Pagination
+[prevPage]
+other = "Önceki"
+
+[nextPage]
+other = "Sonraki"
+
+# Search
+[searchPlaceholder]
+other = "Yazı, proje, not ara..."
+
+[searchTip]
+other = "Tüm içerikte aramak için yazın"
+
+[searchShortcut]
+other = "İpucu: Aramayı açmak için / tuşuna basın"
+
+# 404
+[notFoundTitle]
+other = "404"
+
+[notFoundText]
+other = "Aradığınız sayfa bulunamadı."
+
+[backToHome]
+other = "Ana Sayfaya Dön"
+
+# Footer
+[allRightsReserved]
+other = "Tüm hakları saklıdır."
+
+# Alerts
+[alertNote]
+other = "Not"
+
+[alertTip]
+other = "İpucu"
+
+[alertImportant]
+other = "Önemli"
+
+[alertWarning]
+other = "Uyarı"
+
+[alertCaution]
+other = "Dikkat"

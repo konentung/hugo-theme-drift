@@ -1,0 +1,111 @@
+# Navigation
+[home]
+other = "홈"
+
+[posts]
+other = "글"
+
+[projects]
+other = "프로젝트"
+
+[notes]
+other = "노트"
+
+[tags]
+other = "태그"
+
+[about]
+other = "소개"
+
+[search]
+other = "검색"
+
+# Hero
+[explorePosts]
+other = "글 둘러보기"
+
+[viewProjects]
+other = "프로젝트 보기"
+
+# Sections
+[recentPosts]
+other = "최신 글"
+
+[featuredProjects]
+other = "프로젝트"
+
+[recentNotes]
+other = "노트"
+
+[viewAll]
+other = "전체 보기"
+
+[latest]
+other = "최신"
+
+# Post
+[minRead]
+one = "{{ .Count }}분 소요"
+other = "{{ .Count }}분 소요"
+
+[previous]
+other = "이전"
+
+[next]
+other = "다음"
+
+[tableOfContents]
+other = "목차"
+
+[sharePost]
+other = "이 글 공유하기"
+
+[comments]
+other = "댓글"
+
+# Pagination
+[prevPage]
+other = "이전 페이지"
+
+[nextPage]
+other = "다음 페이지"
+
+# Search
+[searchPlaceholder]
+other = "글, 프로젝트, 노트 검색..."
+
+[searchTip]
+other = "키워드를 입력하여 검색하세요"
+
+[searchShortcut]
+other = "팁: / 키를 눌러 언제든 검색을 열 수 있습니다"
+
+# 404
+[notFoundTitle]
+other = "404"
+
+[notFoundText]
+other = "죄송합니다! 찾으시는 페이지가 존재하지 않습니다."
+
+[backToHome]
+other = "홈으로 돌아가기"
+
+# Footer
+[allRightsReserved]
+other = "All rights reserved."
+
+# Alerts
+[alertNote]
+other = "참고"
+
+[alertTip]
+other = "팁"
+
+[alertImportant]
+other = "중요"
+
+[alertWarning]
+other = "경고"
+
+[alertCaution]
+other = "주의"

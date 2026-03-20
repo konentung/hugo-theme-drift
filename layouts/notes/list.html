@@ -1,0 +1,34 @@
+{{ define "main" }}
+
+<section class="page-hero page-hero-compact">
+  <h1 class="page-title reveal">{{ .Title }}</h1>
+  <p class="page-desc reveal">Quick notes, snippets, and things worth remembering.</p>
+</section>
+
+{{/* Group notes by month */}}
+{{ $pages := .Pages }}
+{{ $grouped := $pages.GroupByDate "January 2006" }}
+
+<section class="notes-timeline">
+  {{ range $i, $group := $grouped }}
+  <div class="notes-month reveal" style="--delay: {{ mul $i 0.05 }}s">
+    <div class="notes-month-label">{{ .Key }}</div>
+    <div class="notes-month-list">
+      {{ range $j, $page := .Pages }}
+      <a href="{{ .Permalink }}" class="note-row">
+        <span class="note-row-date">{{ .Date.Format "01/02" }}</span>
+        <span class="note-row-title">{{ .Title }}</span>
+        {{ with .Params.tags }}
+        <span class="note-row-tags">
+          {{ range first 2 . }}<span class="note-row-tag">{{ . }}</span>{{ end }}
+        </span>
+        {{ end }}
+        <svg class="note-row-arrow" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+      </a>
+      {{ end }}
+    </div>
+  </div>
+  {{ end }}
+</section>
+
+{{ end }}

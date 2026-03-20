@@ -1,0 +1,10 @@
+name = "hugo-theme-drift"
+license = "MIT"
+description = "A modern Hugo theme with 3D floating sidebar navigation, dark/light mode, and dynamic animations."
+homepage = "https://github.com/konentung/hugo-theme-drift"
+tags = ["blog", "modern", "responsive", "dark-mode", "3d", "animated"]
+features = ["blog", "projects", "notes", "dark-light-toggle", "3d-sidebar"]
+min_version = "0.112.0"
+
+[author]
+  name = "Konen Tung"

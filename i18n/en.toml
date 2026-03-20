@@ -1,0 +1,111 @@
+# Navigation
+[home]
+other = "Home"
+
+[posts]
+other = "Posts"
+
+[projects]
+other = "Projects"
+
+[notes]
+other = "Notes"
+
+[tags]
+other = "Tags"
+
+[about]
+other = "About"
+
+[search]
+other = "Search"
+
+# Hero
+[explorePosts]
+other = "Explore Posts"
+
+[viewProjects]
+other = "View Projects"
+
+# Sections
+[recentPosts]
+other = "Recent Posts"
+
+[featuredProjects]
+other = "Projects"
+
+[recentNotes]
+other = "Notes"
+
+[viewAll]
+other = "View all"
+
+[latest]
+other = "Latest"
+
+# Post
+[minRead]
+one = "{{ .Count }} min read"
+other = "{{ .Count }} min read"
+
+[previous]
+other = "Previous"
+
+[next]
+other = "Next"
+
+[tableOfContents]
+other = "Table of Contents"
+
+[sharePost]
+other = "Share this post"
+
+[comments]
+other = "Comments"
+
+# Pagination
+[prevPage]
+other = "Previous"
+
+[nextPage]
+other = "Next"
+
+# Search
+[searchPlaceholder]
+other = "Search posts, projects, notes..."
+
+[searchTip]
+other = "Type to search across all content"
+
+[searchShortcut]
+other = "Tip: Press / anywhere to open search"
+
+# 404
+[notFoundTitle]
+other = "404"
+
+[notFoundText]
+other = "Oops! The page you're looking for doesn't seem to exist."
+
+[backToHome]
+other = "Back Home"
+
+# Footer
+[allRightsReserved]
+other = "All rights reserved."
+
+# Alerts
+[alertNote]
+other = "Note"
+
+[alertTip]
+other = "Tip"
+
+[alertImportant]
+other = "Important"
+
+[alertWarning]
+other = "Warning"
+
+[alertCaution]
+other = "Caution"

@@ -1,0 +1,49 @@
+{{ define "main" }}
+
+<section class="page-hero">
+  <h1 class="page-title reveal">{{ .Title }}</h1>
+  {{ with .Description }}<p class="page-desc reveal">{{ . }}</p>{{ end }}
+</section>
+
+<section class="card-grid">
+  {{ range $i, $page := .Pages }}
+  <a href="{{ .Permalink }}" class="card card-projects reveal" style="--delay: {{ mul $i 0.08 }}s" {{ with .Params.github }}data-repo="{{ . }}"{{ end }}>
+    <div class="card-body">
+      <h2 class="card-title">{{ .Title }}</h2>
+      <div class="card-meta">
+        <time>{{ .Date.Format "2006-01-02" }}</time>
+      </div>
+      {{ with .Params.tags }}
+      <div class="card-tags">
+        {{ range first 3 . }}<span class="mini-tag">{{ . }}</span>{{ end }}
+      </div>
+      {{ end }}
+      {{ with .Summary }}<p class="card-excerpt">{{ . | plainify | truncate 150 }}</p>{{ end }}
+
+      {{/* GitHub mini stats — filled by JS */}}
+      {{ with $.Params.github }}{{ end }}
+      <div class="gh-card-stats" data-gh-card="stats" style="display:none;">
+        <span class="gh-card-stat" data-gh-card="stars">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <span data-gh-card="stars-val">--</span>
+        </span>
+        <span class="gh-card-stat" data-gh-card="forks">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="18" r="3"/><circle cx="6" cy="6" r="3"/><circle cx="18" cy="6" r="3"/><path d="M18 9v2c0 .6-.4 1-1 1H7c-.6 0-1-.4-1-1V9"/><path d="M12 12v3"/></svg>
+          <span data-gh-card="forks-val">--</span>
+        </span>
+        <span class="gh-card-stat" data-gh-card="lang">
+          <span class="gh-card-lang-dot"></span>
+          <span data-gh-card="lang-val">--</span>
+        </span>
+      </div>
+    </div>
+    <div class="card-arrow">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+    </div>
+  </a>
+  {{ end }}
+</section>
+
+{{ template "_internal/pagination.html" . }}
+
+{{ end }}

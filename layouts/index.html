@@ -1,0 +1,103 @@
+{{ define "main" }}
+
+{{/* Hero Section */}}
+<section class="hero">
+  <div class="hero-bg-orbs">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+  </div>
+  <div class="hero-content">
+    <h1 class="hero-title reveal">{{ .Site.Params.heroTitle | default .Site.Title }}</h1>
+    <p class="hero-subtitle">
+      <span class="typewriter" data-text="{{ .Site.Params.heroSubtitle | default .Site.Params.description }}"></span>
+    </p>
+    <div class="hero-actions reveal">
+      <a href="{{ "posts/" | relURL }}" class="btn btn-glow">{{ T "explorePosts" }}</a>
+      <a href="{{ "projects/" | relURL }}" class="btn btn-outline">{{ T "viewProjects" }}</a>
+    </div>
+  </div>
+</section>
+
+{{/* Recent Posts */}}
+{{ $posts := where .Site.RegularPages "Section" "posts" }}
+{{ with $posts }}
+<section class="home-section">
+  <div class="section-header">
+    <h2 class="section-title reveal">
+      <span class="title-accent"></span>{{ T "recentPosts" }}
+    </h2>
+    <a href="{{ "posts/" | relURL }}" class="section-link">{{ T "viewAll" }} &rarr;</a>
+  </div>
+  <div class="card-grid">
+    {{ range $i, $page := first 4 . }}
+    <a href="{{ .Permalink }}" class="card reveal" style="--delay: {{ mul $i 0.1 }}s">
+      {{ if eq $i 0 }}<span class="card-badge pulse">{{ T "latest" }}</span>{{ end }}
+      <div class="card-body">
+        <h3 class="card-title">{{ .Title }}</h3>
+        <div class="card-meta">
+          <time>{{ .Date.Format "2006-01-02" }}</time>
+          {{ with .ReadingTime }}<span class="meta-dot"></span><span>{{ T "minRead" . }}</span>{{ end }}
+        </div>
+        {{ with .Summary }}<p class="card-excerpt">{{ . | plainify | truncate 120 }}</p>{{ end }}
+      </div>
+      <div class="card-arrow">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </div>
+    </a>
+    {{ end }}
+  </div>
+</section>
+{{ end }}
+
+{{/* Featured Projects */}}
+{{ $projects := where .Site.RegularPages "Section" "projects" }}
+{{ with $projects }}
+<section class="home-section">
+  <div class="section-header">
+    <h2 class="section-title reveal">
+      <span class="title-accent accent-project"></span>{{ T "featuredProjects" }}
+    </h2>
+    <a href="{{ "projects/" | relURL }}" class="section-link">{{ T "viewAll" }} &rarr;</a>
+  </div>
+  <div class="card-grid grid-3">
+    {{ range $i, $page := first 3 . }}
+    <a href="{{ .Permalink }}" class="card card-project reveal" style="--delay: {{ mul $i 0.1 }}s">
+      <div class="card-body">
+        <h3 class="card-title">{{ .Title }}</h3>
+        {{ with .Params.description }}<p class="card-excerpt">{{ . }}</p>{{ end }}
+        {{ with .Params.tags }}
+        <div class="card-tags">
+          {{ range first 3 . }}<span class="mini-tag">{{ . }}</span>{{ end }}
+        </div>
+        {{ end }}
+      </div>
+    </a>
+    {{ end }}
+  </div>
+</section>
+{{ end }}
+
+{{/* Recent Notes */}}
+{{ $notes := where .Site.RegularPages "Section" "notes" }}
+{{ with $notes }}
+<section class="home-section">
+  <div class="section-header">
+    <h2 class="section-title reveal">
+      <span class="title-accent accent-note"></span>{{ T "recentNotes" }}
+    </h2>
+    <a href="{{ "notes/" | relURL }}" class="section-link">{{ T "viewAll" }} &rarr;</a>
+  </div>
+  <div class="notes-list">
+    {{ range $i, $page := first 5 . }}
+    <a href="{{ .Permalink }}" class="note-item reveal" style="--delay: {{ mul $i 0.08 }}s">
+      <span class="note-title">{{ .Title }}</span>
+      <span class="note-meta">{{ .Date.Format "Jan 02" }}</span>
+      <svg class="note-arrow" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+    </a>
+    {{ end }}
+  </div>
+</section>
+{{ end }}
+
+{{ end }}

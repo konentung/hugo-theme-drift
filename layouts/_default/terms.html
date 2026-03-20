@@ -1,0 +1,16 @@
+{{ define "main" }}
+
+<section class="page-hero">
+  <h1 class="page-title reveal">{{ .Title }}</h1>
+</section>
+
+<section class="terms-cloud">
+  {{ range $i, $page := .Pages }}
+  <a href="{{ .Permalink }}" class="term-pill reveal" style="--delay: {{ mul $i 0.05 }}s">
+    <span class="term-name">{{ .Title }}</span>
+    <span class="term-count">{{ len .Pages }}</span>
+  </a>
+  {{ end }}
+</section>
+
+{{ end }}

@@ -1,0 +1,111 @@
+# Navigation
+[home]
+other = "ホーム"
+
+[posts]
+other = "記事"
+
+[projects]
+other = "プロジェクト"
+
+[notes]
+other = "ノート"
+
+[tags]
+other = "タグ"
+
+[about]
+other = "について"
+
+[search]
+other = "検索"
+
+# Hero
+[explorePosts]
+other = "記事を読む"
+
+[viewProjects]
+other = "プロジェクトを見る"
+
+# Sections
+[recentPosts]
+other = "最新の記事"
+
+[featuredProjects]
+other = "プロジェクト"
+
+[recentNotes]
+other = "ノート"
+
+[viewAll]
+other = "すべて見る"
+
+[latest]
+other = "最新"
+
+# Post
+[minRead]
+one = "{{ .Count }} 分で読める"
+other = "{{ .Count }} 分で読める"
+
+[previous]
+other = "前へ"
+
+[next]
+other = "次へ"
+
+[tableOfContents]
+other = "目次"
+
+[sharePost]
+other = "この記事をシェア"
+
+[comments]
+other = "コメント"
+
+# Pagination
+[prevPage]
+other = "前のページ"
+
+[nextPage]
+other = "次のページ"
+
+# Search
+[searchPlaceholder]
+other = "記事、プロジェクト、ノートを検索..."
+
+[searchTip]
+other = "キーワードを入力して検索"
+
+[searchShortcut]
+other = "ヒント：/ キーでいつでも検索を開けます"
+
+# 404
+[notFoundTitle]
+other = "404"
+
+[notFoundText]
+other = "お探しのページは見つかりませんでした。"
+
+[backToHome]
+other = "ホームに戻る"
+
+# Footer
+[allRightsReserved]
+other = "All rights reserved."
+
+# Alerts
+[alertNote]
+other = "ノート"
+
+[alertTip]
+other = "ヒント"
+
+[alertImportant]
+other = "重要"
+
+[alertWarning]
+other = "警告"
+
+[alertCaution]
+other = "注意"

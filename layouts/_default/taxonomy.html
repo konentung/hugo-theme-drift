@@ -1,0 +1,23 @@
+{{ define "main" }}
+
+<section class="page-hero">
+  <h1 class="page-title reveal">{{ .Title }}</h1>
+</section>
+
+<section class="card-grid">
+  {{ range $i, $page := .Pages }}
+  <a href="{{ .Permalink }}" class="card reveal" style="--delay: {{ mul $i 0.08 }}s">
+    <div class="card-body">
+      <h2 class="card-title">{{ .Title }}</h2>
+      <div class="card-meta">
+        <time>{{ .Date.Format "2006-01-02" }}</time>
+      </div>
+      {{ with .Summary }}<p class="card-excerpt">{{ . | plainify | truncate 120 }}</p>{{ end }}
+    </div>
+  </a>
+  {{ end }}
+</section>
+
+{{ template "_internal/pagination.html" . }}
+
+{{ end }}

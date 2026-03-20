@@ -1,0 +1,111 @@
+# Navigation
+[home]
+other = "Accueil"
+
+[posts]
+other = "Articles"
+
+[projects]
+other = "Projets"
+
+[notes]
+other = "Notes"
+
+[tags]
+other = "Tags"
+
+[about]
+other = "À propos"
+
+[search]
+other = "Recherche"
+
+# Hero
+[explorePosts]
+other = "Parcourir les articles"
+
+[viewProjects]
+other = "Voir les projets"
+
+# Sections
+[recentPosts]
+other = "Articles récents"
+
+[featuredProjects]
+other = "Projets"
+
+[recentNotes]
+other = "Notes"
+
+[viewAll]
+other = "Voir tout"
+
+[latest]
+other = "Nouveau"
+
+# Post
+[minRead]
+one = "{{ .Count }} min de lecture"
+other = "{{ .Count }} min de lecture"
+
+[previous]
+other = "Précédent"
+
+[next]
+other = "Suivant"
+
+[tableOfContents]
+other = "Table des matières"
+
+[sharePost]
+other = "Partager cet article"
+
+[comments]
+other = "Commentaires"
+
+# Pagination
+[prevPage]
+other = "Précédente"
+
+[nextPage]
+other = "Suivante"
+
+# Search
+[searchPlaceholder]
+other = "Rechercher articles, projets, notes..."
+
+[searchTip]
+other = "Tapez pour rechercher dans tout le contenu"
+
+[searchShortcut]
+other = "Astuce : Appuyez sur / pour ouvrir la recherche"
+
+# 404
+[notFoundTitle]
+other = "404"
+
+[notFoundText]
+other = "Oups ! La page que vous cherchez n'existe pas."
+
+[backToHome]
+other = "Retour à l'accueil"
+
+# Footer
+[allRightsReserved]
+other = "Tous droits réservés."
+
+# Alerts
+[alertNote]
+other = "Note"
+
+[alertTip]
+other = "Astuce"
+
+[alertImportant]
+other = "Important"
+
+[alertWarning]
+other = "Avertissement"
+
+[alertCaution]
+other = "Attention"

@@ -1,0 +1,113 @@
+# Navigation
+[home]
+other = "Главная"
+
+[posts]
+other = "Статьи"
+
+[projects]
+other = "Проекты"
+
+[notes]
+other = "Заметки"
+
+[tags]
+other = "Теги"
+
+[about]
+other = "О сайте"
+
+[search]
+other = "Поиск"
+
+# Hero
+[explorePosts]
+other = "Читать статьи"
+
+[viewProjects]
+other = "Смотреть проекты"
+
+# Sections
+[recentPosts]
+other = "Последние статьи"
+
+[featuredProjects]
+other = "Проекты"
+
+[recentNotes]
+other = "Заметки"
+
+[viewAll]
+other = "Смотреть все"
+
+[latest]
+other = "Новое"
+
+# Post
+[minRead]
+one = "{{ .Count }} мин. чтения"
+few = "{{ .Count }} мин. чтения"
+many = "{{ .Count }} мин. чтения"
+other = "{{ .Count }} мин. чтения"
+
+[previous]
+other = "Назад"
+
+[next]
+other = "Далее"
+
+[tableOfContents]
+other = "Содержание"
+
+[sharePost]
+other = "Поделиться статьёй"
+
+[comments]
+other = "Комментарии"
+
+# Pagination
+[prevPage]
+other = "Предыдущая"
+
+[nextPage]
+other = "Следующая"
+
+# Search
+[searchPlaceholder]
+other = "Поиск статей, проектов, заметок..."
+
+[searchTip]
+other = "Введите для поиска по всему содержимому"
+
+[searchShortcut]
+other = "Совет: Нажмите / чтобы открыть поиск"
+
+# 404
+[notFoundTitle]
+other = "404"
+
+[notFoundText]
+other = "Упс! Страница, которую вы ищете, не существует."
+
+[backToHome]
+other = "Вернуться на главную"
+
+# Footer
+[allRightsReserved]
+other = "Все права защищены."
+
+# Alerts
+[alertNote]
+other = "Примечание"
+
+[alertTip]
+other = "Совет"
+
+[alertImportant]
+other = "Важно"
+
+[alertWarning]
+other = "Предупреждение"
+
+[alertCaution]
+other = "Осторожно"

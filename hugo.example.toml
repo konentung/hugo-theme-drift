@@ -1,0 +1,76 @@
+baseURL = 'https://example.com/'
+languageCode = 'zh-tw'
+defaultContentLanguage = 'zh-tw'
+title = 'My Site'
+theme = 'hugo-theme-drift'
+
+[pagination]
+  pagerSize = 6
+
+# Required for search functionality
+[outputs]
+  home = ["HTML", "JSON", "RSS"]
+
+[params]
+  description = "A personal blog about tech, projects, and notes."
+  author = "Your Name"
+  heroTitle = "Hello, World"
+  heroSubtitle = "A modern Hugo theme with 3D sidebar and dark mode."
+  footerText = "Built with hugo-theme-drift."
+  # siteStartYear = 2024                 # Copyright start year (e.g. 2024–2026)
+  # avatar = "/img/avatar.jpg"           # Place your avatar in static/img/
+  # favicon = "/favicon.svg"             # Custom favicon path
+
+  # Features
+  showTableOfContents = false             # Show TOC sidebar on posts
+  showShareButtons = false                # Show social share buttons on posts
+
+  # Comments (Utterances: https://utteranc.es)
+  # utterancesRepo = "username/repo"      # GitHub repo for comments
+
+  # Custom CSS/JS injection
+  # customCSS = ["/css/custom.css"]
+  # customJS = ["/js/custom.js"]
+
+[params.social]
+  github = "https://github.com/username"
+  # twitter = "https://twitter.com/username"
+  # linkedin = "https://linkedin.com/in/username"
+  # instagram = "https://instagram.com/username"
+  email = "mailto:hello@example.com"
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "Posts"
+    url = "/posts/"
+    weight = 2
+  [[menu.main]]
+    name = "Projects"
+    url = "/projects/"
+    weight = 3
+  [[menu.main]]
+    name = "Notes"
+    url = "/notes/"
+    weight = 4
+  [[menu.main]]
+    name = "Tags"
+    url = "/tags/"
+    weight = 5
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 6
+
+[markup]
+  [markup.highlight]
+    style = "dracula"
+    lineNos = false
+    noClasses = true
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 4
+    ordered = false

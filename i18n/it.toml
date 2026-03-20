@@ -1,0 +1,111 @@
+# Navigation
+[home]
+other = "Home"
+
+[posts]
+other = "Articoli"
+
+[projects]
+other = "Progetti"
+
+[notes]
+other = "Note"
+
+[tags]
+other = "Tag"
+
+[about]
+other = "Chi sono"
+
+[search]
+other = "Cerca"
+
+# Hero
+[explorePosts]
+other = "Esplora gli articoli"
+
+[viewProjects]
+other = "Vedi i progetti"
+
+# Sections
+[recentPosts]
+other = "Articoli recenti"
+
+[featuredProjects]
+other = "Progetti"
+
+[recentNotes]
+other = "Note"
+
+[viewAll]
+other = "Vedi tutto"
+
+[latest]
+other = "Nuovo"
+
+# Post
+[minRead]
+one = "{{ .Count }} min di lettura"
+other = "{{ .Count }} min di lettura"
+
+[previous]
+other = "Precedente"
+
+[next]
+other = "Successivo"
+
+[tableOfContents]
+other = "Indice"
+
+[sharePost]
+other = "Condividi questo articolo"
+
+[comments]
+other = "Commenti"
+
+# Pagination
+[prevPage]
+other = "Precedente"
+
+[nextPage]
+other = "Successiva"
+
+# Search
+[searchPlaceholder]
+other = "Cerca articoli, progetti, note..."
+
+[searchTip]
+other = "Digita per cercare in tutti i contenuti"
+
+[searchShortcut]
+other = "Suggerimento: Premi / per aprire la ricerca"
+
+# 404
+[notFoundTitle]
+other = "404"
+
+[notFoundText]
+other = "Ops! La pagina che cerchi non esiste."
+
+[backToHome]
+other = "Torna alla home"
+
+# Footer
+[allRightsReserved]
+other = "Tutti i diritti riservati."
+
+# Alerts
+[alertNote]
+other = "Nota"
+
+[alertTip]
+other = "Suggerimento"
+
+[alertImportant]
+other = "Importante"
+
+[alertWarning]
+other = "Avvertenza"
+
+[alertCaution]
+other = "Attenzione"

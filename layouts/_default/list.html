@@ -1,0 +1,43 @@
+{{ define "main" }}
+
+<section class="page-hero">
+  <h1 class="page-title reveal">{{ .Title }}</h1>
+  {{ with .Description }}<p class="page-desc reveal">{{ . }}</p>{{ end }}
+</section>
+
+{{ $paginator := .Paginate .Pages }}
+{{ if gt (len $paginator.Pages) 0 }}
+<section class="card-grid">
+  {{ range $i, $page := $paginator.Pages }}
+  <a href="{{ .Permalink }}" class="card {{ with .Section }}card-{{ . }}{{ end }} reveal" style="--delay: {{ mul $i 0.08 }}s">
+    {{ with .Params.cover }}
+    <div class="card-cover">
+      <img src="{{ . }}" alt="{{ $.Title }}" loading="lazy">
+    </div>
+    {{ end }}
+    <div class="card-body">
+      <h2 class="card-title">{{ .Title }}</h2>
+      <div class="card-meta">
+        <time>{{ .Date.Format "2006-01-02" }}</time>
+        {{ with .ReadingTime }}<span class="meta-dot"></span><span>{{ T "minRead" . }}</span>{{ end }}
+      </div>
+      {{ with .Params.tags }}
+      <div class="card-tags">
+        {{ range first 3 . }}<span class="mini-tag">{{ . }}</span>{{ end }}
+      </div>
+      {{ end }}
+      {{ with .Summary }}<p class="card-excerpt">{{ . | plainify | truncate 150 }}</p>{{ end }}
+    </div>
+    <div class="card-arrow">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+    </div>
+  </a>
+  {{ end }}
+</section>
+
+{{ if gt $paginator.TotalPages 1 }}
+{{ template "_internal/pagination.html" . }}
+{{ end }}
+{{ end }}
+
+{{ end }}

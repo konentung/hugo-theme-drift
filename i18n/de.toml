@@ -1,0 +1,111 @@
+# Navigation
+[home]
+other = "Startseite"
+
+[posts]
+other = "Beiträge"
+
+[projects]
+other = "Projekte"
+
+[notes]
+other = "Notizen"
+
+[tags]
+other = "Tags"
+
+[about]
+other = "Über"
+
+[search]
+other = "Suche"
+
+# Hero
+[explorePosts]
+other = "Beiträge erkunden"
+
+[viewProjects]
+other = "Projekte ansehen"
+
+# Sections
+[recentPosts]
+other = "Neueste Beiträge"
+
+[featuredProjects]
+other = "Projekte"
+
+[recentNotes]
+other = "Notizen"
+
+[viewAll]
+other = "Alle anzeigen"
+
+[latest]
+other = "Neu"
+
+# Post
+[minRead]
+one = "{{ .Count }} Min. Lesezeit"
+other = "{{ .Count }} Min. Lesezeit"
+
+[previous]
+other = "Zurück"
+
+[next]
+other = "Weiter"
+
+[tableOfContents]
+other = "Inhaltsverzeichnis"
+
+[sharePost]
+other = "Beitrag teilen"
+
+[comments]
+other = "Kommentare"
+
+# Pagination
+[prevPage]
+other = "Vorherige"
+
+[nextPage]
+other = "Nächste"
+
+# Search
+[searchPlaceholder]
+other = "Beiträge, Projekte, Notizen durchsuchen..."
+
+[searchTip]
+other = "Suchbegriff eingeben"
+
+[searchShortcut]
+other = "Tipp: Drücken Sie / um die Suche zu öffnen"
+
+# 404
+[notFoundTitle]
+other = "404"
+
+[notFoundText]
+other = "Hoppla! Die gesuchte Seite existiert nicht."
+
+[backToHome]
+other = "Zurück zur Startseite"
+
+# Footer
+[allRightsReserved]
+other = "Alle Rechte vorbehalten."
+
+# Alerts
+[alertNote]
+other = "Hinweis"
+
+[alertTip]
+other = "Tipp"
+
+[alertImportant]
+other = "Wichtig"
+
+[alertWarning]
+other = "Warnung"
+
+[alertCaution]
+other = "Vorsicht"

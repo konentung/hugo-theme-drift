@@ -1,0 +1,44 @@
+{{ define "main" }}
+
+<article class="note-single">
+  <header class="note-header reveal">
+    <a href="{{ "notes/" | relURL }}" class="note-back">&larr; All Notes</a>
+    <h1 class="note-title">{{ .Title }}</h1>
+    <div class="note-meta">
+      <time>{{ .Date.Format "2006-01-02" }}</time>
+      {{ with .Params.categories }}
+        {{ range . }}<span class="note-category">{{ . }}</span>{{ end }}
+      {{ end }}
+    </div>
+    {{ with .Params.tags }}
+    <div class="note-tags">
+      {{ range . }}
+      <a href="{{ "tags/" | relURL }}{{ . | urlize }}/" class="tag-pill">{{ . }}</a>
+      {{ end }}
+    </div>
+    {{ end }}
+  </header>
+
+  <div class="note-content reveal">
+    {{ .Content }}
+  </div>
+
+  <footer class="note-footer">
+    <nav class="note-nav">
+      {{ with .PrevInSection }}
+      <a class="note-nav-link prev" href="{{ .Permalink }}">
+        <span class="nav-dir">&larr;</span>
+        <span class="nav-title">{{ .Title }}</span>
+      </a>
+      {{ end }}
+      {{ with .NextInSection }}
+      <a class="note-nav-link next" href="{{ .Permalink }}">
+        <span class="nav-title">{{ .Title }}</span>
+        <span class="nav-dir">&rarr;</span>
+      </a>
+      {{ end }}
+    </nav>
+  </footer>
+</article>
+
+{{ end }}
