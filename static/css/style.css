@@ -2638,11 +2638,8 @@ button.search-trigger:hover {
   top: 50%;
   transform: translateY(-50%);
   width: 200px;
-  max-height: 70vh;
-  overflow-y: auto;
   z-index: 1000;
   perspective: 800px;
-  scrollbar-width: thin;
 }
 .toc-container {
   background: var(--bg-sidebar);
@@ -2651,6 +2648,9 @@ button.search-trigger:hover {
   border: 1px solid var(--border);
   border-radius: 20px;
   padding: 20px 16px;
+  max-height: 70vh;
+  overflow-y: auto;
+  scrollbar-width: thin;
   box-shadow:
     0 8px 32px rgba(0, 0, 0, 0.2),
     0 0 0 1px var(--border),
