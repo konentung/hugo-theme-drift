@@ -2647,10 +2647,8 @@ button.search-trigger:hover {
   -webkit-backdrop-filter: blur(24px) saturate(180%);
   border: 1px solid var(--border);
   border-radius: 20px;
+  overflow: hidden;
   padding: 20px 16px;
-  max-height: 70vh;
-  overflow-y: auto;
-  scrollbar-width: thin;
   box-shadow:
     0 8px 32px rgba(0, 0, 0, 0.2),
     0 0 0 1px var(--border),
@@ -2674,6 +2672,11 @@ button.search-trigger:hover {
   letter-spacing: 0.06em;
   color: var(--text-secondary);
   margin: 0 0 0.75rem;
+}
+.toc-nav {
+  max-height: calc(70vh - 60px);
+  overflow-y: auto;
+  scrollbar-width: thin;
 }
 .toc-nav #TableOfContents ul {
   list-style: none;
